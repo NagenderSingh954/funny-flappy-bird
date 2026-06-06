@@ -1,0 +1,61 @@
+@import "tailwindcss";
+body{
+  background-image: url('https://imgs.search.brave.com/3K1ZHk8ybz_KSoJC0eBJTm5MvGQKCKrjDU20Z1CY2Vw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDc0NDMx/MzMuanBn');
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  translate: transformy;
+}
+/* .bird{
+  background-color: red;
+  width: 200px;
+  height: 200px;
+} */
+
+
+.main{
+  background-color: rgb(33, 159, 226);
+  padding: 0;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 200%;
+  height: 255px;
+
+  background-image: url('/city.png');
+  background-repeat: repeat-x;
+  background-size: 225px 255px;
+
+  animation: moveCity 10s linear infinite;
+}
+
+@keyframes moveCity {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-225px);
+  }
+}
+
+.upper{
+  z-index: 2;
+  background-image: url('../public/building.jpg');
+  background-size: cover;
+  transform: rotate(180deg);
+}
+
+.lower{
+  z-index: 2;
+  background-image: url('../public/building.jpg');
+  background-size: cover;
+  
+
+}
