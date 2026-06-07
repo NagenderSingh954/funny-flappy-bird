@@ -47,14 +47,14 @@ body{
 
 .upper{
   z-index: 2;
-  background-image: url('../public/building.jpg');
+  background-image: url('/building.jpg');
   background-size: cover;
   transform: rotate(180deg);
 }
 
 .lower{
   z-index: 2;
-  background-image: url('../public/building.jpg');
+  background-image: url('/building.jpg');
   background-size: cover;
   
 
